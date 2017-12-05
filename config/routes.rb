@@ -1,4 +1,5 @@
 SampleApp::Application.routes.draw do
+  devise_for :users
   root 'static_pages#home' #下と同じ意味
   # match '/',        to: 'static_pages#home',    via: 'get'
   match '/help',    to: 'static_pages#help',    via: 'get'
