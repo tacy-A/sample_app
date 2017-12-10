@@ -4,7 +4,7 @@ SampleApp::Application.routes.draw do
     :registrations => "registrations"
   }
   
-  resources :users, only: [:show]
+  resources :users, only: [:show, :index]
   root 'static_pages#home' #下と同じ意味
   # match '/',        to: 'static_pages#home',    via: 'get'
   match '/help',    to: 'static_pages#help',    via: 'get'
